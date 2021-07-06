@@ -806,9 +806,12 @@ window.onload = function () {
 			if (!target.closest('.header__body')) {
 				if (document.querySelector('.menu__body').classList.contains('_active')) {
 					document.querySelector('.menu__body').classList.remove('_active');
+					_removeClasses(document.querySelectorAll('body'), "_lock");
+
 				}
 				if (document.querySelector('.icon-menu').classList.contains('_active')) {
 					document.querySelector('.icon-menu').classList.remove('_active');
+					_removeClasses(document.querySelectorAll('body'), "_lock");
 				}
 			}
 		}
