@@ -1295,6 +1295,9 @@ body.ie ._ibg img {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 50%;
           flex: 0 0 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .column-collage_top-right {
@@ -1314,6 +1317,19 @@ body.ie ._ibg img {
   display: flex;
 }
 
+.column-collage__items-center-left,
+.column-collage__items_bottom-right {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100;
+          flex: 0 0 100;
+}
+
+.column-collage__items-center-left .item-collage__image,
+.column-collage__items_bottom-right .item-collage__image {
+  height: 100%;
+  width: 100%;
+}
+
 .column-collage__item {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 50%;
@@ -1324,6 +1340,13 @@ body.ie ._ibg img {
   padding: 0px 0px 100% 0px;
   height: 100%;
   width: 100%;
+}
+
+.column-collage__image-center-right,
+.column-collage__image-bottom-left {
+  height: 100%;
+  width: 100%;
+  padding: 0px 0px 50% 0px;
 }
 
 .item-collage {
@@ -1352,6 +1375,7 @@ body.ie ._ibg img {
 
 .item-collage__button {
   width: 100%;
+  min-height: 60px;
   min-height: 60px;
   padding-left: 15px;
   padding-right: 15px;
@@ -1496,6 +1520,10 @@ body.ie ._ibg img {
 
   .item-collage {
     padding: calc(0px + 60 * ((100vw - 320px) / 950));
+  }
+
+  .item-collage__button {
+    min-height: calc(0px + 60 * ((100vw - 320px) / 950));
   }
 
   .item-collage__button {
