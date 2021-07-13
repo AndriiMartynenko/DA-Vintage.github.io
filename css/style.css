@@ -993,6 +993,7 @@ body.ie ._ibg img {
   -o-transition: left 0.4s ease-out 0s;
   transition: left 0.4s ease-out 0s;
   z-index: 50;
+  overflow-y: auto;
 }
 
 .menu__body._active {
@@ -1544,6 +1545,15 @@ body.ie ._ibg img {
   border: 1px solid #064649;
   font-weight: 500;
   border-radius: 10px;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.form-contact__input input:focus {
+  outline: 0;
+  -webkit-box-shadow: 0 0 5px 0 rgba(6, 70, 73, 0.7);
+          box-shadow: 0 0 5px 0 rgba(6, 70, 73, 0.7);
 }
 
 .form-contact__input .form__error {
@@ -1574,6 +1584,15 @@ body.ie ._ibg img {
   resize: none;
   height: 100%;
   width: 100%;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.form-contact__textarea textarea:focus {
+  outline: 0;
+  -webkit-box-shadow: 0 0 5px 0 rgba(6, 70, 73, 0.7);
+          box-shadow: 0 0 5px 0 rgba(6, 70, 73, 0.7);
 }
 
 .form-contact__textarea .form__error {
@@ -1948,5 +1967,17 @@ body.ie ._ibg img {
     border-color: #064649;
     background: #fff;
     color: #064649;
+  }
+
+  .form-contact__input input:hover {
+    outline: 0;
+    -webkit-box-shadow: 0 0 5px 0 rgba(6, 70, 73, 0.7);
+            box-shadow: 0 0 5px 0 rgba(6, 70, 73, 0.7);
+  }
+
+  .form-contact__textarea textarea:hover {
+    outline: 0;
+    -webkit-box-shadow: 0 0 5px 0 rgba(6, 70, 73, 0.7);
+            box-shadow: 0 0 5px 0 rgba(6, 70, 73, 0.7);
   }
 }
