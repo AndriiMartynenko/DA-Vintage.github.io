@@ -1200,8 +1200,6 @@ body.ie ._ibg img {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100%;
-  width: 100%;
   background-attachment: fixed;
 }
 
